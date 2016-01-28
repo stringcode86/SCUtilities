@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Example/build/Debug-iphoneos/SCUtilitiesCoreIOS.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SCUtilitiesCoreIOS-Swift.h",
+          'external-contents': "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Example/build/Debug-iphoneos/SCUtilitiesCoreIOS.framework/Headers/SCUtilitiesCoreIOS-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SCUtilitiesCoreIOS-umbrella.h",
+          'external-contents': "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Example/Pods/Target Support Files/SCUtilitiesCoreIOS/SCUtilitiesCoreIOS-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Example/build/Debug-iphoneos/SCUtilitiesCoreIOS.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Example/build/Pods.build/Debug-iphoneos/SCUtilitiesCoreIOS.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module SCUtilitiesCoreIOS {
+  umbrella header "SCUtilitiesCoreIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
