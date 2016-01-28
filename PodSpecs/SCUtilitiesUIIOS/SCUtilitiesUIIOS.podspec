@@ -15,9 +15,9 @@ UIKit convenience & utility iOS framework written in Swift
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'PodSpecs/SCUtilitiesUIIOS/Pod/Classes/**/*'
   s.resource_bundles = {
-    'SCUtilitiesUIIOS' => ['Pod/Assets/*.png']
+    'SCUtilitiesUIIOS' => ['PodSpecs/SCUtilitiesUIIOS/Pod/Assets/*.png']
   }
 
   s.frameworks = 'Foundation'
