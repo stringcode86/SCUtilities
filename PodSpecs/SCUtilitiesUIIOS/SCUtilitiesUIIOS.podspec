@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SCUtilitiesUIIOS"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "UIKit utility iOS framework written in Swift"
   s.description      = <<-DESC
 UIKit convenience & utility iOS framework written in Swift
