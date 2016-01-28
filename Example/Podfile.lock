@@ -4,7 +4,12 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - StringcodeUtils (0.1.0)
+  - StringcodeUtils (0.1.0):
+    - StringcodeUtils/Core (= 0.1.0)
+    - StringcodeUtils/UI (= 0.1.0)
+  - StringcodeUtils/Core (0.1.0)
+  - StringcodeUtils/UI (0.1.0):
+    - StringcodeUtils/Core
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,6 +21,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  StringcodeUtils: 7c3afad666b667565cc91c38ec4e33dbf0f52dfe
+  StringcodeUtils: 66e26dee70500f8ecfc136f10cd21ac112a21351
 
 COCOAPODS: 0.39.0

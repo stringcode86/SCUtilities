@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/stringcode'
 
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
+  s.osx.deployment_target = "10.11"
   s.watchos.deployment_target = "2.0"
 
   s.subspec "Core" do |sp|

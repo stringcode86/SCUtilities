@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '17EE836C9347305A7730B95A'
+               BlueprintIdentifier = '5FCB64651048AEE9BA38BAC6'
                BlueprintName = 'StringcodeUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'StringcodeUtils.framework'>

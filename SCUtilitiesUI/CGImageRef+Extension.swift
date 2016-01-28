@@ -6,9 +6,14 @@
 //  Copyright © 2015 stringCode ltd. All rights reserved.
 //
 
-import QuartzCore
-import CoreImage
-import Foundation
+#if os(OSX)
+    import Cocoa
+#else
+    import UIKit
+#endif
+
+
+#if os(OSX) || os(iOS) || os(tvOS)
 
 public func CGImageCreateLinerGranient(size: CGSize, points: [CGPoint], colors: [CGColorRef], scale: CGFloat) -> CGImageRef? {
     var params = [String: AnyObject]()
@@ -26,3 +31,5 @@ public func CGImageCreateLinerGranient(size: CGSize, points: [CGPoint], colors: 
 }
 
 private var context = CIContext()
+
+#endif
