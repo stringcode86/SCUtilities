@@ -1,0 +1,14 @@
+PODS:
+  - SCUtilitiesUIIOS (0.1.0)
+
+DEPENDENCIES:
+  - SCUtilitiesUIIOS (from `../`)
+
+EXTERNAL SOURCES:
+  SCUtilitiesUIIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SCUtilitiesUIIOS: eba8983ef9b9e6e109bab2eae63fb58b0b3d2789
+
+COCOAPODS: 0.39.0

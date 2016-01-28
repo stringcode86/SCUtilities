@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 s.name             = "SCUtilitiesCoreIOS"
 s.version          = "0.1.1"
-s.summary          = "Convenience & utility written in Swift"
+s.summary          = "Foundation utility iOS framework written in Swift"
 s.description      = <<-DESC
-Convenience & utility framework for iOS written in Swift
+Foundation convenience & utility iOS framework written in Swift
 DESC
 
 s.homepage         = "https://github.com/stringcode86/SCUtilities"
@@ -21,8 +21,5 @@ s.resource_bundles = {
 'SCUtilitiesCoreIOS' => ['PodSpecs/SCUtilitiesCoreIOS/Pod/Assets/*.png']
 }
 
-
-# s.public_header_files = 'Pod/Classes/**/*.h'
 s.frameworks = 'Foundation'
-# s.dependency 'AFNetworking', '~> 2.3'
 end
