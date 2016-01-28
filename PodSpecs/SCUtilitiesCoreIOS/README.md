@@ -7,9 +7,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+This colleciotion of various convenience & utility classes and functions I use in my projcets written in Swift. Currently in a very rought state and I suspect limited use to anybody apart from me. 
 
 ## Installation
 

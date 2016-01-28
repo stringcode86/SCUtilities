@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SCUtilitiesUIIOS"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "UIKit utility iOS framework written in Swift"
   s.description      = <<-DESC
 UIKit convenience & utility iOS framework written in Swift
@@ -8,7 +8,7 @@ UIKit convenience & utility iOS framework written in Swift
 
   s.homepage         = "https://github.com/stringcode86/SCUtilities"
   s.license          = { :type => 'MIT', :file => 'PodSpecs/SCUtilitiesUIIOS/LICENSE' }
-  s.author           = { "stringcode" => "michael@stringcode.co.uk" }
+  s.author           = { "@stringCode" => "michael@stringcode.co.uk" }
   s.source           = { :git => "https://github.com/stringcode86/SCUtilities.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/stringcode'
 
