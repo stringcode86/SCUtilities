@@ -1,6 +1,0 @@
-framework module Pods_SCUtilitiesCoreIOS_Tests {
-  umbrella header "Pods-SCUtilitiesCoreIOS_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

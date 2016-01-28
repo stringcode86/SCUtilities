@@ -48,6 +48,11 @@
 		9F6D7C111C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
 		9F6D7C121C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
 		9F6D7C131C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
+		9FBDF3AE1C5A6C3500BF90A9 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDF3AD1C5A6C3500BF90A9 /* NSDate+Extensions.swift */; };
+		9FBDF3B01C5A6C6000BF90A9 /* Test.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */; };
+		9FBDF3B11C5A6C6000BF90A9 /* Test.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */; };
+		9FBDF3B21C5A6C6000BF90A9 /* Test.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */; };
+		9FBDF3B31C5A6C6000BF90A9 /* Test.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +115,8 @@
 		9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDicitionary+Extensions.swift"; sourceTree = "<group>"; };
 		9F5569D21BFD0ED200C7C88A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numebers.swift; sourceTree = "<group>"; };
+		9FBDF3AD1C5A6C3500BF90A9 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
+		9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swif.swift; sourceTree = "<group>"; };
 		9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageRef+Extension.swift"; sourceTree = "<group>"; };
 		9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCacheManager.swift; sourceTree = "<group>"; };
 		9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGTypes+Extensions.swift"; sourceTree = "<group>"; };
@@ -292,6 +299,8 @@
 				9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */,
 				9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */,
 				9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */,
+				9FBDF3AD1C5A6C3500BF90A9 /* NSDate+Extensions.swift */,
+				9FBDF3AF1C5A6C6000BF90A9 /* Test.swif.swift */,
 			);
 			path = SCUtilitiesCore;
 			sourceTree = "<group>";
@@ -645,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D7C101C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9FBDF3B01C5A6C6000BF90A9 /* Test.swif.swift in Sources */,
 				9F54CBCE1C44137200D8A0D5 /* PathsURLs.swift in Sources */,
 				9F03D75F1C39F6A800874AD8 /* SCCacheManager.swift in Sources */,
 				9F54CBE31C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
@@ -656,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBDF3AE1C5A6C3500BF90A9 /* NSDate+Extensions.swift in Sources */,
 				9F03D7D51C3C21F000874AD8 /* CGImageRef+Extension.swift in Sources */,
 				9F03D7D61C3C21F000874AD8 /* CGTypes+Extensions.swift in Sources */,
 				9F03D7D71C3C21F000874AD8 /* UIColor+Extentions.swift in Sources */,
@@ -667,6 +678,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D7C121C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9FBDF3B21C5A6C6000BF90A9 /* Test.swif.swift in Sources */,
 				9F54CBD01C44137200D8A0D5 /* PathsURLs.swift in Sources */,
 				9F03D85B1C3C3AB800874AD8 /* SCCacheManager.swift in Sources */,
 				9F54CBE51C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
@@ -679,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D7C111C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9FBDF3B11C5A6C6000BF90A9 /* Test.swif.swift in Sources */,
 				9F54CBCF1C44137200D8A0D5 /* PathsURLs.swift in Sources */,
 				9F4229611C39EE7B0049FA97 /* SCCacheManager.swift in Sources */,
 				9F54CBE41C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
@@ -691,6 +704,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D7C131C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9FBDF3B31C5A6C6000BF90A9 /* Test.swif.swift in Sources */,
 				9F54CBD11C44137200D8A0D5 /* PathsURLs.swift in Sources */,
 				9F4229651C39EE7C0049FA97 /* SCCacheManager.swift in Sources */,
 				9F54CBE61C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,

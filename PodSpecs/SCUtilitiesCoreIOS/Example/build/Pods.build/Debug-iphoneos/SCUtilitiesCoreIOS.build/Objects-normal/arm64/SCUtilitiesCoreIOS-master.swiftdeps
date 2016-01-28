@@ -1,9 +1,0 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "97654fa19912dd678bf7342180035573"
-build_time: [507302393, 15940000]
-inputs:
-  "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/Numebers.swift": [505612194, 0]
-  "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/Utils.swift": [506206135, 0]
-  "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/PathsURLs.swift": [505846155, 0]
-  "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/NSDicitionary+Extensions.swift": [505955471, 0]
-  "/Users/stringCode/Development/Apps/SCUtilities/PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/SCCacheManager.swift": [503336993, 0]
