@@ -9,16 +9,18 @@ DESC
 s.homepage         = "https://github.com/stringcode86/SCUtilities"
 s.license          = 'MIT'
 s.author           = { "stringcode" => "michael@stringcode.co.uk" }
-s.source           = { :git => "https://github.com/stringcode86/SCUtilities.git", :tag => s.version.to_s ,"/PodSpecs/SCUtilitiesCoreIOS/"}
+s.source           = { :git => "https://github.com/stringcode86/SCUtilities.git", :tag => s.version.to_s }
+s.social_media_url = 'https://twitter.com/@stringcode'
 
 
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.source_files = 'Pod/Classes/**/*'
+s.source_files = 'PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/**/*'
 s.resource_bundles = {
-'SCUtilitiesCoreIOS' => ['Pod/Assets/*.png']
+'SCUtilitiesCoreIOS' => ['PodSpecs/SCUtilitiesCoreIOS/Pod/Assets/*.png']
 }
+
 
 # s.public_header_files = 'Pod/Classes/**/*.h'
 s.frameworks = 'Foundation'
