@@ -7,30 +7,264 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F55697A1BFD054800C7C88A /* SCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5569791BFD054800C7C88A /* SCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F03D75E1C39F6A800874AD8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5569D21BFD0ED200C7C88A /* Utils.swift */; };
+		9F03D75F1C39F6A800874AD8 /* SCCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */; };
+		9F03D7C91C3C204900874AD8 /* SCUtilitiesUIIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F03D7C81C3C204900874AD8 /* SCUtilitiesUIIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F03D7D51C3C21F000874AD8 /* CGImageRef+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */; };
+		9F03D7D61C3C21F000874AD8 /* CGTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */; };
+		9F03D7D71C3C21F000874AD8 /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */; };
+		9F03D7EB1C3C268900874AD8 /* CGImageRef+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */; };
+		9F03D7EC1C3C268900874AD8 /* CGTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */; };
+		9F03D7ED1C3C268900874AD8 /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */; };
+		9F03D7EE1C3C268900874AD8 /* CGImageRef+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */; };
+		9F03D7EF1C3C268900874AD8 /* CGTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */; };
+		9F03D7F01C3C268900874AD8 /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */; };
+		9F03D7F11C3C268A00874AD8 /* CGImageRef+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */; };
+		9F03D7F21C3C268A00874AD8 /* CGTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */; };
+		9F03D7F31C3C268A00874AD8 /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */; };
+		9F03D8551C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F03D8541C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F03D85A1C3C3AB800874AD8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5569D21BFD0ED200C7C88A /* Utils.swift */; };
+		9F03D85B1C3C3AB800874AD8 /* SCCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */; };
+		9F42294E1C39E8750049FA97 /* SCUtilitiesCoreWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F42294D1C39E8750049FA97 /* SCUtilitiesCoreWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4229601C39EE7B0049FA97 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5569D21BFD0ED200C7C88A /* Utils.swift */; };
+		9F4229611C39EE7B0049FA97 /* SCCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */; };
+		9F4229641C39EE7C0049FA97 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5569D21BFD0ED200C7C88A /* Utils.swift */; };
+		9F4229651C39EE7C0049FA97 /* SCCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */; };
+		9F42297D1C39EF6D0049FA97 /* SCUtilitiesUIWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F42297C1C39EF6D0049FA97 /* SCUtilitiesUIWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4229971C39EF9F0049FA97 /* SCUtilitiesUIOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4229961C39EF9F0049FA97 /* SCUtilitiesUIOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F523D681C3C3E8A00EAD0F9 /* SCUtilitiesCoreIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03D7561C39F68C00874AD8 /* SCUtilitiesCoreIOS.framework */; };
+		9F523D6B1C3C400500EAD0F9 /* SCUtilitiesCoreOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4229311C39E67D0049FA97 /* SCUtilitiesCoreOSX.framework */; };
+		9F523D6E1C3C406500EAD0F9 /* SCUtilitiesCoreTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03D8521C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.framework */; };
+		9F523D731C3C40E500EAD0F9 /* SCUtilitiesCoreWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F42294B1C39E8750049FA97 /* SCUtilitiesCoreWatch.framework */; };
+		9F54CBCE1C44137200D8A0D5 /* PathsURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */; };
+		9F54CBCF1C44137200D8A0D5 /* PathsURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */; };
+		9F54CBD01C44137200D8A0D5 /* PathsURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */; };
+		9F54CBD11C44137200D8A0D5 /* PathsURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */; };
+		9F54CBE31C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */; };
+		9F54CBE41C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */; };
+		9F54CBE51C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */; };
+		9F54CBE61C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */; };
+		9F6D7C101C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
+		9F6D7C111C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
+		9F6D7C121C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
+		9F6D7C131C407D8A00F555B1 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9F523D691C3C3EA900EAD0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F55696D1BFD054800C7C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F03D7551C39F68C00874AD8;
+			remoteInfo = SCUtilitiesCoreIOS;
+		};
+		9F523D6C1C3C401700EAD0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F55696D1BFD054800C7C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F4229301C39E67D0049FA97;
+			remoteInfo = SCUtilitiesCoreOSX;
+		};
+		9F523D6F1C3C407100EAD0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F55696D1BFD054800C7C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F03D8511C3C3A9E00874AD8;
+			remoteInfo = SCUtilitiesCoreTvOS;
+		};
+		9F523D711C3C40DB00EAD0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F55696D1BFD054800C7C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F42294A1C39E8750049FA97;
+			remoteInfo = SCUtilitiesCoreWatch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		9F5569761BFD054800C7C88A /* SCUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F5569791BFD054800C7C88A /* SCUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilities.h; sourceTree = "<group>"; };
-		9F55697B1BFD054800C7C88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F03D7561C39F68C00874AD8 /* SCUtilitiesCoreIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesCoreIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03D7581C39F68C00874AD8 /* SCUtilitiesCoreIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesCoreIOS.h; sourceTree = "<group>"; };
+		9F03D75A1C39F68C00874AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F03D7C61C3C204900874AD8 /* SCUtilitiesUIIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesUIIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03D7C81C3C204900874AD8 /* SCUtilitiesUIIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesUIIOS.h; sourceTree = "<group>"; };
+		9F03D7CA1C3C204900874AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F03D8521C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesCoreTvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03D8541C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesCoreTvOS.h; sourceTree = "<group>"; };
+		9F03D8561C3C3A9E00874AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4229311C39E67D0049FA97 /* SCUtilitiesCoreOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesCoreOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4229331C39E67D0049FA97 /* SCUtilitiesCoreOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesCoreOSX.h; sourceTree = "<group>"; };
+		9F4229351C39E67D0049FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F42294B1C39E8750049FA97 /* SCUtilitiesCoreWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesCoreWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F42294D1C39E8750049FA97 /* SCUtilitiesCoreWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesCoreWatch.h; sourceTree = "<group>"; };
+		9F42294F1C39E8750049FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F42297A1C39EF6D0049FA97 /* SCUtilitiesUIWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesUIWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F42297C1C39EF6D0049FA97 /* SCUtilitiesUIWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesUIWatch.h; sourceTree = "<group>"; };
+		9F42297E1C39EF6D0049FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4229871C39EF870049FA97 /* SCUtilitiesUITvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesUITvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4229891C39EF870049FA97 /* SCUtilitiesUITvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesUITvOS.h; sourceTree = "<group>"; };
+		9F42298B1C39EF870049FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4229941C39EF9F0049FA97 /* SCUtilitiesUIOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUtilitiesUIOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4229961C39EF9F0049FA97 /* SCUtilitiesUIOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtilitiesUIOSX.h; sourceTree = "<group>"; };
+		9F4229981C39EF9F0049FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsURLs.swift; sourceTree = "<group>"; };
+		9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDicitionary+Extensions.swift"; sourceTree = "<group>"; };
+		9F5569D21BFD0ED200C7C88A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numebers.swift; sourceTree = "<group>"; };
+		9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageRef+Extension.swift"; sourceTree = "<group>"; };
+		9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCacheManager.swift; sourceTree = "<group>"; };
+		9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGTypes+Extensions.swift"; sourceTree = "<group>"; };
+		9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F5569721BFD054800C7C88A /* Frameworks */ = {
+		9F03D7521C39F68C00874AD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F03D7C21C3C204900874AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F523D681C3C3E8A00EAD0F9 /* SCUtilitiesCoreIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D84E1C3C3A9E00874AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F42292D1C39E67D0049FA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229471C39E8750049FA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229761C39EF6D0049FA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F523D731C3C40E500EAD0F9 /* SCUtilitiesCoreWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229831C39EF870049FA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F523D6E1C3C406500EAD0F9 /* SCUtilitiesCoreTvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229901C39EF9F0049FA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F523D6B1C3C400500EAD0F9 /* SCUtilitiesCoreOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F03D7571C39F68C00874AD8 /* SCUtilitiesCoreIOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F03D7581C39F68C00874AD8 /* SCUtilitiesCoreIOS.h */,
+				9F03D75A1C39F68C00874AD8 /* Info.plist */,
+			);
+			path = SCUtilitiesCoreIOS;
+			sourceTree = "<group>";
+		};
+		9F03D7C71C3C204900874AD8 /* SCUtilitiesUIIOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F03D7C81C3C204900874AD8 /* SCUtilitiesUIIOS.h */,
+				9F03D7CA1C3C204900874AD8 /* Info.plist */,
+			);
+			path = SCUtilitiesUIIOS;
+			sourceTree = "<group>";
+		};
+		9F03D8531C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F03D8541C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.h */,
+				9F03D8561C3C3A9E00874AD8 /* Info.plist */,
+			);
+			path = SCUtilitiesCoreTvOS;
+			sourceTree = "<group>";
+		};
+		9F4229321C39E67D0049FA97 /* SCUtilitiesCoreOSX */ = {
+			isa = PBXGroup;
+			children = (
+				9F4229331C39E67D0049FA97 /* SCUtilitiesCoreOSX.h */,
+				9F4229351C39E67D0049FA97 /* Info.plist */,
+			);
+			path = SCUtilitiesCoreOSX;
+			sourceTree = "<group>";
+		};
+		9F42294C1C39E8750049FA97 /* SCUtilitiesCoreWatch */ = {
+			isa = PBXGroup;
+			children = (
+				9F42294D1C39E8750049FA97 /* SCUtilitiesCoreWatch.h */,
+				9F42294F1C39E8750049FA97 /* Info.plist */,
+			);
+			path = SCUtilitiesCoreWatch;
+			sourceTree = "<group>";
+		};
+		9F42297B1C39EF6D0049FA97 /* SCUtilitiesUIWatch */ = {
+			isa = PBXGroup;
+			children = (
+				9F42297C1C39EF6D0049FA97 /* SCUtilitiesUIWatch.h */,
+				9F42297E1C39EF6D0049FA97 /* Info.plist */,
+			);
+			path = SCUtilitiesUIWatch;
+			sourceTree = "<group>";
+		};
+		9F4229881C39EF870049FA97 /* SCUtilitiesUITvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F4229891C39EF870049FA97 /* SCUtilitiesUITvOS.h */,
+				9F42298B1C39EF870049FA97 /* Info.plist */,
+			);
+			path = SCUtilitiesUITvOS;
+			sourceTree = "<group>";
+		};
+		9F4229951C39EF9F0049FA97 /* SCUtilitiesUIOSX */ = {
+			isa = PBXGroup;
+			children = (
+				9F4229961C39EF9F0049FA97 /* SCUtilitiesUIOSX.h */,
+				9F4229981C39EF9F0049FA97 /* Info.plist */,
+			);
+			path = SCUtilitiesUIOSX;
+			sourceTree = "<group>";
+		};
 		9F55696C1BFD054800C7C88A = {
 			isa = PBXGroup;
 			children = (
-				9F5569781BFD054800C7C88A /* SCUtilities */,
+				9F5569941BFD059900C7C88A /* SCUtilitiesUI */,
+				9F5569871BFD057600C7C88A /* SCUtilitiesCore */,
+				9F03D7C71C3C204900874AD8 /* SCUtilitiesUIIOS */,
+				9F03D7571C39F68C00874AD8 /* SCUtilitiesCoreIOS */,
+				9F4229951C39EF9F0049FA97 /* SCUtilitiesUIOSX */,
+				9F4229321C39E67D0049FA97 /* SCUtilitiesCoreOSX */,
+				9F4229881C39EF870049FA97 /* SCUtilitiesUITvOS */,
+				9F03D8531C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS */,
+				9F42297B1C39EF6D0049FA97 /* SCUtilitiesUIWatch */,
+				9F42294C1C39E8750049FA97 /* SCUtilitiesCoreWatch */,
 				9F5569771BFD054800C7C88A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,50 +272,253 @@
 		9F5569771BFD054800C7C88A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F5569761BFD054800C7C88A /* SCUtilities.framework */,
+				9F4229311C39E67D0049FA97 /* SCUtilitiesCoreOSX.framework */,
+				9F42294B1C39E8750049FA97 /* SCUtilitiesCoreWatch.framework */,
+				9F42297A1C39EF6D0049FA97 /* SCUtilitiesUIWatch.framework */,
+				9F4229871C39EF870049FA97 /* SCUtilitiesUITvOS.framework */,
+				9F4229941C39EF9F0049FA97 /* SCUtilitiesUIOSX.framework */,
+				9F03D7561C39F68C00874AD8 /* SCUtilitiesCoreIOS.framework */,
+				9F03D7C61C3C204900874AD8 /* SCUtilitiesUIIOS.framework */,
+				9F03D8521C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F5569781BFD054800C7C88A /* SCUtilities */ = {
+		9F5569871BFD057600C7C88A /* SCUtilitiesCore */ = {
 			isa = PBXGroup;
 			children = (
-				9F5569791BFD054800C7C88A /* SCUtilities.h */,
-				9F55697B1BFD054800C7C88A /* Info.plist */,
+				9F5569D21BFD0ED200C7C88A /* Utils.swift */,
+				9F6D7C0F1C407D8A00F555B1 /* Numebers.swift */,
+				9F54CBE21C453E1700D8A0D5 /* NSDicitionary+Extensions.swift */,
+				9F54CBCD1C44137200D8A0D5 /* PathsURLs.swift */,
+				9FDDA2BE1C1DCB1000E6C954 /* SCCacheManager.swift */,
 			);
-			path = SCUtilities;
+			path = SCUtilitiesCore;
+			sourceTree = "<group>";
+		};
+		9F5569941BFD059900C7C88A /* SCUtilitiesUI */ = {
+			isa = PBXGroup;
+			children = (
+				9FDDA2BC1C1DB79E00E6C954 /* CGImageRef+Extension.swift */,
+				9FF1E4C31C25F9A7008C2C36 /* CGTypes+Extensions.swift */,
+				9FF1E4C41C25F9A7008C2C36 /* UIColor+Extentions.swift */,
+			);
+			path = SCUtilitiesUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9F5569731BFD054800C7C88A /* Headers */ = {
+		9F03D7531C39F68C00874AD8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F55697A1BFD054800C7C88A /* SCUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D7C31C3C204900874AD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D7C91C3C204900874AD8 /* SCUtilitiesUIIOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D84F1C3C3A9E00874AD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D8551C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F42292E1C39E67D0049FA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229481C39E8750049FA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F42294E1C39E8750049FA97 /* SCUtilitiesCoreWatch.h in Headers */,
+				9F42297D1C39EF6D0049FA97 /* SCUtilitiesUIWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229771C39EF6D0049FA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229841C39EF870049FA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229911C39EF9F0049FA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4229971C39EF9F0049FA97 /* SCUtilitiesUIOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9F5569751BFD054800C7C88A /* SCUtilities */ = {
+		9F03D7551C39F68C00874AD8 /* SCUtilitiesCoreIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F55697E1BFD054800C7C88A /* Build configuration list for PBXNativeTarget "SCUtilities" */;
+			buildConfigurationList = 9F03D75B1C39F68C00874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreIOS" */;
 			buildPhases = (
-				9F5569711BFD054800C7C88A /* Sources */,
-				9F5569721BFD054800C7C88A /* Frameworks */,
-				9F5569731BFD054800C7C88A /* Headers */,
-				9F5569741BFD054800C7C88A /* Resources */,
+				9F03D7511C39F68C00874AD8 /* Sources */,
+				9F03D7521C39F68C00874AD8 /* Frameworks */,
+				9F03D7531C39F68C00874AD8 /* Headers */,
+				9F03D7541C39F68C00874AD8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SCUtilities;
-			productName = SCUtilities;
-			productReference = 9F5569761BFD054800C7C88A /* SCUtilities.framework */;
+			name = SCUtilitiesCoreIOS;
+			productName = SCUtilitiesCoreIOS;
+			productReference = 9F03D7561C39F68C00874AD8 /* SCUtilitiesCoreIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F03D7C51C3C204900874AD8 /* SCUtilitiesUIIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F03D7CB1C3C204900874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIIOS" */;
+			buildPhases = (
+				9F03D7C11C3C204900874AD8 /* Sources */,
+				9F03D7C21C3C204900874AD8 /* Frameworks */,
+				9F03D7C31C3C204900874AD8 /* Headers */,
+				9F03D7C41C3C204900874AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F523D6A1C3C3EA900EAD0F9 /* PBXTargetDependency */,
+			);
+			name = SCUtilitiesUIIOS;
+			productName = SCUtilitiesUIIOS;
+			productReference = 9F03D7C61C3C204900874AD8 /* SCUtilitiesUIIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F03D8511C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F03D8571C3C3A9E00874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreTvOS" */;
+			buildPhases = (
+				9F03D84D1C3C3A9E00874AD8 /* Sources */,
+				9F03D84E1C3C3A9E00874AD8 /* Frameworks */,
+				9F03D84F1C3C3A9E00874AD8 /* Headers */,
+				9F03D8501C3C3A9E00874AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCUtilitiesCoreTvOS;
+			productName = SCUtilitiesCoreTvOS;
+			productReference = 9F03D8521C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F4229301C39E67D0049FA97 /* SCUtilitiesCoreOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4229361C39E67D0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreOSX" */;
+			buildPhases = (
+				9F42292C1C39E67D0049FA97 /* Sources */,
+				9F42292D1C39E67D0049FA97 /* Frameworks */,
+				9F42292E1C39E67D0049FA97 /* Headers */,
+				9F42292F1C39E67D0049FA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCUtilitiesCoreOSX;
+			productName = SCUtilitiesCoreOSX;
+			productReference = 9F4229311C39E67D0049FA97 /* SCUtilitiesCoreOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F42294A1C39E8750049FA97 /* SCUtilitiesCoreWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4229501C39E8750049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreWatch" */;
+			buildPhases = (
+				9F4229461C39E8750049FA97 /* Sources */,
+				9F4229471C39E8750049FA97 /* Frameworks */,
+				9F4229481C39E8750049FA97 /* Headers */,
+				9F4229491C39E8750049FA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCUtilitiesCoreWatch;
+			productName = SCUtilitiesCoreWatch;
+			productReference = 9F42294B1C39E8750049FA97 /* SCUtilitiesCoreWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F4229791C39EF6D0049FA97 /* SCUtilitiesUIWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F42297F1C39EF6D0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIWatch" */;
+			buildPhases = (
+				9F4229751C39EF6D0049FA97 /* Sources */,
+				9F4229761C39EF6D0049FA97 /* Frameworks */,
+				9F4229771C39EF6D0049FA97 /* Headers */,
+				9F4229781C39EF6D0049FA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F523D721C3C40DB00EAD0F9 /* PBXTargetDependency */,
+			);
+			name = SCUtilitiesUIWatch;
+			productName = SCUtilitiesUIWatch;
+			productReference = 9F42297A1C39EF6D0049FA97 /* SCUtilitiesUIWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F4229861C39EF870049FA97 /* SCUtilitiesUITvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F42298C1C39EF870049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUITvOS" */;
+			buildPhases = (
+				9F4229821C39EF870049FA97 /* Sources */,
+				9F4229831C39EF870049FA97 /* Frameworks */,
+				9F4229841C39EF870049FA97 /* Headers */,
+				9F4229851C39EF870049FA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F523D701C3C407100EAD0F9 /* PBXTargetDependency */,
+			);
+			name = SCUtilitiesUITvOS;
+			productName = SCUtilitiesUITvOS;
+			productReference = 9F4229871C39EF870049FA97 /* SCUtilitiesUITvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F4229931C39EF9F0049FA97 /* SCUtilitiesUIOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4229991C39EF9F0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIOSX" */;
+			buildPhases = (
+				9F42298F1C39EF9F0049FA97 /* Sources */,
+				9F4229901C39EF9F0049FA97 /* Frameworks */,
+				9F4229911C39EF9F0049FA97 /* Headers */,
+				9F4229921C39EF9F0049FA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F523D6D1C3C401700EAD0F9 /* PBXTargetDependency */,
+			);
+			name = SCUtilitiesUIOSX;
+			productName = SCUtilitiesUIOSX;
+			productReference = 9F4229941C39EF9F0049FA97 /* SCUtilitiesUIOSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -91,10 +528,31 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "stringed ltd";
+				ORGANIZATIONNAME = "stringCode ltd";
 				TargetAttributes = {
-					9F5569751BFD054800C7C88A = {
-						CreatedOnToolsVersion = 7.1.1;
+					9F03D7551C39F68C00874AD8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F03D7C51C3C204900874AD8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F03D8511C3C3A9E00874AD8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F4229301C39E67D0049FA97 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F42294A1C39E8750049FA97 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F4229791C39EF6D0049FA97 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F4229861C39EF870049FA97 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F4229931C39EF9F0049FA97 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -110,13 +568,69 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F5569751BFD054800C7C88A /* SCUtilities */,
+				9F03D7C51C3C204900874AD8 /* SCUtilitiesUIIOS */,
+				9F03D7551C39F68C00874AD8 /* SCUtilitiesCoreIOS */,
+				9F4229931C39EF9F0049FA97 /* SCUtilitiesUIOSX */,
+				9F4229301C39E67D0049FA97 /* SCUtilitiesCoreOSX */,
+				9F4229861C39EF870049FA97 /* SCUtilitiesUITvOS */,
+				9F03D8511C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS */,
+				9F4229791C39EF6D0049FA97 /* SCUtilitiesUIWatch */,
+				9F42294A1C39E8750049FA97 /* SCUtilitiesCoreWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9F5569741BFD054800C7C88A /* Resources */ = {
+		9F03D7541C39F68C00874AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D7C41C3C204900874AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D8501C3C3A9E00874AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F42292F1C39E67D0049FA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229491C39E8750049FA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229781C39EF6D0049FA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229851C39EF870049FA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229921C39EF9F0049FA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,16 +640,430 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9F5569711BFD054800C7C88A /* Sources */ = {
+		9F03D7511C39F68C00874AD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6D7C101C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9F54CBCE1C44137200D8A0D5 /* PathsURLs.swift in Sources */,
+				9F03D75F1C39F6A800874AD8 /* SCCacheManager.swift in Sources */,
+				9F54CBE31C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
+				9F03D75E1C39F6A800874AD8 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D7C11C3C204900874AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D7D51C3C21F000874AD8 /* CGImageRef+Extension.swift in Sources */,
+				9F03D7D61C3C21F000874AD8 /* CGTypes+Extensions.swift in Sources */,
+				9F03D7D71C3C21F000874AD8 /* UIColor+Extentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F03D84D1C3C3A9E00874AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6D7C121C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9F54CBD01C44137200D8A0D5 /* PathsURLs.swift in Sources */,
+				9F03D85B1C3C3AB800874AD8 /* SCCacheManager.swift in Sources */,
+				9F54CBE51C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
+				9F03D85A1C3C3AB800874AD8 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F42292C1C39E67D0049FA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6D7C111C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9F54CBCF1C44137200D8A0D5 /* PathsURLs.swift in Sources */,
+				9F4229611C39EE7B0049FA97 /* SCCacheManager.swift in Sources */,
+				9F54CBE41C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
+				9F4229601C39EE7B0049FA97 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229461C39E8750049FA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6D7C131C407D8A00F555B1 /* Numebers.swift in Sources */,
+				9F54CBD11C44137200D8A0D5 /* PathsURLs.swift in Sources */,
+				9F4229651C39EE7C0049FA97 /* SCCacheManager.swift in Sources */,
+				9F54CBE61C453E1700D8A0D5 /* NSDicitionary+Extensions.swift in Sources */,
+				9F4229641C39EE7C0049FA97 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229751C39EF6D0049FA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D7F11C3C268A00874AD8 /* CGImageRef+Extension.swift in Sources */,
+				9F03D7F21C3C268A00874AD8 /* CGTypes+Extensions.swift in Sources */,
+				9F03D7F31C3C268A00874AD8 /* UIColor+Extentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4229821C39EF870049FA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D7EE1C3C268900874AD8 /* CGImageRef+Extension.swift in Sources */,
+				9F03D7EF1C3C268900874AD8 /* CGTypes+Extensions.swift in Sources */,
+				9F03D7F01C3C268900874AD8 /* UIColor+Extentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F42298F1C39EF9F0049FA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03D7EB1C3C268900874AD8 /* CGImageRef+Extension.swift in Sources */,
+				9F03D7EC1C3C268900874AD8 /* CGTypes+Extensions.swift in Sources */,
+				9F03D7ED1C3C268900874AD8 /* UIColor+Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9F523D6A1C3C3EA900EAD0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F03D7551C39F68C00874AD8 /* SCUtilitiesCoreIOS */;
+			targetProxy = 9F523D691C3C3EA900EAD0F9 /* PBXContainerItemProxy */;
+		};
+		9F523D6D1C3C401700EAD0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F4229301C39E67D0049FA97 /* SCUtilitiesCoreOSX */;
+			targetProxy = 9F523D6C1C3C401700EAD0F9 /* PBXContainerItemProxy */;
+		};
+		9F523D701C3C407100EAD0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F03D8511C3C3A9E00874AD8 /* SCUtilitiesCoreTvOS */;
+			targetProxy = 9F523D6F1C3C407100EAD0F9 /* PBXContainerItemProxy */;
+		};
+		9F523D721C3C40DB00EAD0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F42294A1C39E8750049FA97 /* SCUtilitiesCoreWatch */;
+			targetProxy = 9F523D711C3C40DB00EAD0F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9F03D75C1C39F68C00874AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F03D75D1C39F68C00874AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F03D7CC1C3C204900874AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUIIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F03D7CD1C3C204900874AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUIIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F03D8581C3C3A9E00874AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreTvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreTvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9F03D8591C3C3A9E00874AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreTvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreTvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		9F4229371C39E67D0049FA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SCUtilitiesCoreOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F4229381C39E67D0049FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SCUtilitiesCoreOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F4229511C39E8750049FA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		9F4229521C39E8750049FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesCoreWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesCoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		9F4229801C39EF6D0049FA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUIWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		9F4229811C39EF6D0049FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUIWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		9F42298D1C39EF870049FA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUITvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUITvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9F42298E1C39EF870049FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SCUtilitiesUITvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUITvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		9F42299A1C39EF9F0049FA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SCUtilitiesUIOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F42299B1C39EF9F0049FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SCUtilitiesUIOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilitiesUIOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9F55697C1BFD054800C7C88A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -225,41 +1153,81 @@
 			};
 			name = Release;
 		};
-		9F55697F1BFD054800C7C88A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SCUtilities/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilities;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9F5569801BFD054800C7C88A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SCUtilities/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.stringcode.SCUtilities;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F03D75B1C39F68C00874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F03D75C1C39F68C00874AD8 /* Debug */,
+				9F03D75D1C39F68C00874AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F03D7CB1C3C204900874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F03D7CC1C3C204900874AD8 /* Debug */,
+				9F03D7CD1C3C204900874AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F03D8571C3C3A9E00874AD8 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreTvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F03D8581C3C3A9E00874AD8 /* Debug */,
+				9F03D8591C3C3A9E00874AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F4229361C39E67D0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4229371C39E67D0049FA97 /* Debug */,
+				9F4229381C39E67D0049FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F4229501C39E8750049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesCoreWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4229511C39E8750049FA97 /* Debug */,
+				9F4229521C39E8750049FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F42297F1C39EF6D0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4229801C39EF6D0049FA97 /* Debug */,
+				9F4229811C39EF6D0049FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F42298C1C39EF870049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUITvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F42298D1C39EF870049FA97 /* Debug */,
+				9F42298E1C39EF870049FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F4229991C39EF9F0049FA97 /* Build configuration list for PBXNativeTarget "SCUtilitiesUIOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F42299A1C39EF9F0049FA97 /* Debug */,
+				9F42299B1C39EF9F0049FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9F5569701BFD054800C7C88A /* Build configuration list for PBXProject "SCUtilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -268,14 +1236,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		9F55697E1BFD054800C7C88A /* Build configuration list for PBXNativeTarget "SCUtilities" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F55697F1BFD054800C7C88A /* Debug */,
-				9F5569801BFD054800C7C88A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
