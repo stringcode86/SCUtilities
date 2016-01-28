@@ -16,10 +16,7 @@ s.social_media_url = 'https://twitter.com/stringcode'
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.source_files = 'PodSpecs/SCUtilitiesCoreIOS/Pod/Classes/**/*'
-s.resource_bundles = {
-'SCUtilitiesCoreIOS' => ['PodSpecs/SCUtilitiesCoreIOS/Pod/Assets/*.png']
-}
+s.source_files = 'SCUtilitiesCore/Classes/**/*'
 
 s.frameworks = 'Foundation'
 end
