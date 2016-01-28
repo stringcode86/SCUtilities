@@ -9,8 +9,8 @@ DESC
 s.homepage         = "https://github.com/stringcode86/SCUtilities"
 s.license          = 'MIT'
 s.author           = { "stringcode" => "michael@stringcode.co.uk" }
-s.source           = { :git => "https://github.com/stringcode86/SCUtilities.git", :tag => s.version.to_s }
-s.social_media_url = 'https://twitter.com/@stringcode'
+s.source           = { :git => "https://github.com/stringcode86/SCUtilities.git", :tag => s.version.to_s ,"/PodSpecs/SCUtilitiesCoreIOS/"}
+
 
 s.platform     = :ios, '8.0'
 s.requires_arc = true

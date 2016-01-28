@@ -5,6 +5,6 @@ framework module SCUtilitiesCoreIOS {
   module * { export * }
 }
 
-module SCUtilitiesCoreIOS.Swift {
-    header "SCUtilitiesCoreIOS-Swift.h"
+module SCUtilitiesCoreIOS.__Swift {
+    exclude header "SCUtilitiesCoreIOS-Swift.h"
 }
