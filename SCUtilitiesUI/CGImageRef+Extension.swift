@@ -19,7 +19,6 @@ public func CGImageCreateLinerGranient(size: CGSize, points: [CGPoint], colors: 
     var params = [String: AnyObject]()
     for (index, element) in points.enumerate() { params["inputPoint\(index)"] = CIVector(CGPoint: element.scaled(scale)) }
     for (index, element) in colors.enumerate() { params["inputColor\(index)"] = CIColor(CGColor: element) }
-    print(params)
     let filter = CIFilter(name: "CILinearGradient", withInputParameters: nil)
     filter?.setDefaults()
     filter?.setValuesForKeysWithDictionary(params)

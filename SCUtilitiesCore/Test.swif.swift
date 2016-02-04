@@ -15,3 +15,7 @@ public func testingFunction() {
 public func testingFunction2() {
     print("Bla bla 2")
 }
+
+public func testingFunction3() {
+    print("Bla bla 3")
+}

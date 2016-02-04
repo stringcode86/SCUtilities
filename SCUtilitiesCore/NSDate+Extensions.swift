@@ -29,5 +29,19 @@ public extension NSDate {
     
     /// Time interval with number if seconds in a day. 24 * 60 * 60
     public class var secondsInDay: NSTimeInterval { get { return 86400 } }
-
+    
+    /// Returns current year
+    public class var currentYear: Int {
+        get { return NSDate.yearComponentFromDate(NSDate()) }
+    }
+    
+    /// Returns year component using `NSCalendar.currentCalendar()`
+    public var yearComponent: Int {
+        get { return NSDate.yearComponentFromDate(self) }
+    }
+    
+    /// Returns year component from date using `NSCalendar.currentCalendar()`
+    private class func yearComponentFromDate(date: NSDate) -> Int {
+        return NSCalendar.currentCalendar().component(.Year, fromDate: date)
+    }
 }

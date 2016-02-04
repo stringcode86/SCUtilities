@@ -1,0 +1,10 @@
+framework module StringcodeUtils {
+  umbrella header "StringcodeUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module StringcodeUtils.__Swift {
+    exclude header "StringcodeUtils-Swift.h"
+}

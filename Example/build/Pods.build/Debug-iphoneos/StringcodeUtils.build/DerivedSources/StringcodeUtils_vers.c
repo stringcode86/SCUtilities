@@ -1,0 +1,1 @@
+ const unsigned char StringcodeUtilsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:StringcodeUtils  PROJECT:Pods-1" "\n"; const double StringcodeUtilsVersionNumber __attribute__ ((used)) = (double)1.;
