@@ -1,0 +1,237 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo6NSDate", ""]
+- ["CSo6NSDate", "isTimeDeltaBetween"]
+- ["CSo6NSDate", "secondsInDay"]
+- ["CSo6NSDate", "currentYear"]
+- ["CSo6NSDate", "yearComponent"]
+provides-dynamic-lookup:
+- "secondsInDay"
+- "currentYear"
+- "yearComponent"
+- "isTimeDeltaBetween"
+depends-top-level:
+- "NSDate"
+- "NSTimeInterval"
+- !private "BooleanLiteralType"
+- "Int"
+- !private "fabs"
+- !private "-"
+- !private "<"
+- "Bool"
+- !private "NSCalendar"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "Stride"]
+- !private ["PSs9AnyObject", "NSCalendar"]
+- !private ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "component"]
+- !private ["PSs9AnyObject", "currentCalendar"]
+- ["PSs9AnyObject", "currentYear"]
+- !private ["PSs9AnyObject", "fabs"]
+- !private ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isTimeDeltaBetween"]
+- ["PSs9AnyObject", "secondsInDay"]
+- !private ["PSs9AnyObject", "timeIntervalSince1970"]
+- ["PSs9AnyObject", "yearComponent"]
+- ["PSs9AnyObject", "yearComponentFromDate"]
+- !private ["PSs23ArrayLiteralConvertible", "Year"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
+- !private ["PSs11CVarArgType", "NSCalendar"]
+- !private ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "Stride"]
+- !private ["PSs11CVarArgType", "component"]
+- !private ["PSs11CVarArgType", "currentCalendar"]
+- ["PSs11CVarArgType", "currentYear"]
+- !private ["PSs11CVarArgType", "fabs"]
+- !private ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isTimeDeltaBetween"]
+- ["PSs11CVarArgType", "secondsInDay"]
+- !private ["PSs11CVarArgType", "timeIntervalSince1970"]
+- ["PSs11CVarArgType", "yearComponent"]
+- ["PSs11CVarArgType", "yearComponentFromDate"]
+- !private ["PSs10Comparable", "Stride"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs23CustomStringConvertible", "NSCalendar"]
+- !private ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
+- !private ["PSs23CustomStringConvertible", "component"]
+- !private ["PSs23CustomStringConvertible", "currentCalendar"]
+- ["PSs23CustomStringConvertible", "currentYear"]
+- !private ["PSs23CustomStringConvertible", "fabs"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isTimeDeltaBetween"]
+- ["PSs23CustomStringConvertible", "secondsInDay"]
+- !private ["PSs23CustomStringConvertible", "timeIntervalSince1970"]
+- ["PSs23CustomStringConvertible", "yearComponent"]
+- ["PSs23CustomStringConvertible", "yearComponentFromDate"]
+- !private ["PSs9Equatable", "NSCalendar"]
+- !private ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "Stride"]
+- !private ["PSs9Equatable", "Year"]
+- !private ["PSs9Equatable", "component"]
+- !private ["PSs9Equatable", "currentCalendar"]
+- ["PSs9Equatable", "currentYear"]
+- !private ["PSs9Equatable", "fabs"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isTimeDeltaBetween"]
+- ["PSs9Equatable", "secondsInDay"]
+- !private ["PSs9Equatable", "timeIntervalSince1970"]
+- ["PSs9Equatable", "yearComponent"]
+- ["PSs9Equatable", "yearComponentFromDate"]
+- !private ["Sf", "Stride"]
+- !private ["PSs23FloatLiteralConvertible", "Stride"]
+- !private ["PSs17FloatingPointType", "Stride"]
+- !private ["PSs8Hashable", "NSCalendar"]
+- !private ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "Stride"]
+- !private ["PSs8Hashable", "component"]
+- !private ["PSs8Hashable", "currentCalendar"]
+- ["PSs8Hashable", "currentYear"]
+- !private ["PSs8Hashable", "fabs"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isTimeDeltaBetween"]
+- ["PSs8Hashable", "secondsInDay"]
+- !private ["PSs8Hashable", "timeIntervalSince1970"]
+- ["PSs8Hashable", "yearComponent"]
+- ["PSs8Hashable", "yearComponentFromDate"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
+- !private ["CSo10NSCalendar", "component"]
+- !private ["CSo10NSCalendar", "currentCalendar"]
+- !private ["VSC14NSCalendarUnit", "Year"]
+- !private ["PSo8NSCoding", "NSCalendar"]
+- !private ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "component"]
+- !private ["PSo8NSCoding", "currentCalendar"]
+- !private ["PSo8NSCoding", "fabs"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "timeIntervalSince1970"]
+- !private ["PSo8NSCoding", "yearComponentFromDate"]
+- !private ["PSo9NSCopying", "NSCalendar"]
+- !private ["PSo9NSCopying", "NSDate"]
+- !private ["PSo9NSCopying", "component"]
+- !private ["PSo9NSCopying", "currentCalendar"]
+- !private ["PSo9NSCopying", "fabs"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "timeIntervalSince1970"]
+- !private ["PSo9NSCopying", "yearComponentFromDate"]
+- ["CSo6NSDate", "Bool"]
+- ["CSo6NSDate", "Int"]
+- !private ["CSo6NSDate", "NSCalendar"]
+- ["CSo6NSDate", "NSDate"]
+- ["CSo6NSDate", "NSTimeInterval"]
+- ["CSo6NSDate", "currentYear"]
+- !private ["CSo6NSDate", "fabs"]
+- !private ["CSo6NSDate", "init"]
+- ["CSo6NSDate", "isTimeDeltaBetween"]
+- ["CSo6NSDate", "secondsInDay"]
+- !private ["CSo6NSDate", "timeIntervalSince1970"]
+- ["CSo6NSDate", "yearComponent"]
+- !private ["CSo6NSDate", "yearComponentFromDate"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSCalendar"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSTimeInterval"]
+- !private ["CSo8NSObject", "component"]
+- !private ["CSo8NSObject", "currentCalendar"]
+- ["CSo8NSObject", "currentYear"]
+- !private ["CSo8NSObject", "fabs"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isTimeDeltaBetween"]
+- ["CSo8NSObject", "secondsInDay"]
+- !private ["CSo8NSObject", "timeIntervalSince1970"]
+- ["CSo8NSObject", "yearComponent"]
+- ["CSo8NSObject", "yearComponentFromDate"]
+- !private ["PSo16NSObjectProtocol", "NSCalendar"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "component"]
+- !private ["PSo16NSObjectProtocol", "currentCalendar"]
+- ["PSo16NSObjectProtocol", "currentYear"]
+- !private ["PSo16NSObjectProtocol", "fabs"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isTimeDeltaBetween"]
+- ["PSo16NSObjectProtocol", "secondsInDay"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSince1970"]
+- ["PSo16NSObjectProtocol", "yearComponent"]
+- ["PSo16NSObjectProtocol", "yearComponentFromDate"]
+- !private ["PSo14NSSecureCoding", "NSCalendar"]
+- !private ["PSo14NSSecureCoding", "NSDate"]
+- !private ["PSo14NSSecureCoding", "component"]
+- !private ["PSo14NSSecureCoding", "currentCalendar"]
+- !private ["PSo14NSSecureCoding", "fabs"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "timeIntervalSince1970"]
+- !private ["PSo14NSSecureCoding", "yearComponentFromDate"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs13OptionSetType", "Year"]
+- ["Sq", "Some"]
+- !private ["PSs16RawRepresentable", "Year"]
+- !private ["PSs14SetAlgebraType", "Year"]
+- !private ["PSs16SignedNumberType", "Stride"]
+- !private ["PSs10Strideable", "Stride"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs19_CVarArgAlignedType", "Stride"]
+- !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
+- !private ["PSs12_Reflectable", "NSCalendar"]
+- !private ["PSs12_Reflectable", "NSDate"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Stride"]
+- !private ["PSs12_Reflectable", "fabs"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "timeIntervalSince1970"]
+- !private ["PSs12_Reflectable", "yearComponentFromDate"]
+- !private ["PSs11_Strideable", "Stride"]
+depends-nominal:
+- !private "PSs16AbsoluteValuable"
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "Sf"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- "PSs8Hashable"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "CSo10NSCalendar"
+- !private "VSC14NSCalendarUnit"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo6NSDate"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- "Sq"
+- !private "PSs16RawRepresentable"
+- !private "PSs14SetAlgebraType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/stringCode/Development/Apps/SCUtilities/Example/Pods/Target Support Files/StringcodeUtils/StringcodeUtils-umbrella.h"
+- "/Users/stringCode/Development/Apps/SCUtilities/Example/build/Pods.build/Debug-iphoneos/StringcodeUtils.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "3a7373ffd5ff67ae254c3f20aa4e680d"

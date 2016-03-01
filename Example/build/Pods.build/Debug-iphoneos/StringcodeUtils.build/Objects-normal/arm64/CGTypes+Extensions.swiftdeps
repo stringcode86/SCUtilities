@@ -17,6 +17,7 @@ provides-member:
 - ["VSC7CGPoint", ""]
 - ["VSC8CGVector", ""]
 - ["VSC6CGRect", ""]
+- ["VSC6CGSize", ""]
 - ["VSC7CGPoint", "length"]
 - ["VSC7CGPoint", "normalized"]
 - ["VSC7CGPoint", "scaled"]
@@ -32,18 +33,22 @@ provides-member:
 - ["VSC6CGRect", "maxXminY"]
 - ["VSC6CGRect", "maxXmidY"]
 - ["VSC6CGRect", "maxXmaxY"]
+- ["VSC6CGSize", "greaterDimetion"]
+- ["VSC6CGSize", "lesserDimetion"]
 provides-dynamic-lookup:
 depends-top-level:
-- "/"
-- "CGVector"
+- "+"
+- "CGRect"
 - "CGFloat"
+- !private "sqrt"
+- "*"
+- "CGVector"
+- !private ">"
+- !private "<"
+- "/"
 - "-"
 - "CGSize"
 - "CGPoint"
-- "CGRect"
-- !private "sqrt"
-- "+"
-- "*"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -51,6 +56,9 @@ depends-member:
 - !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC7CGPoint", "CGFloat"]
@@ -78,8 +86,11 @@ depends-member:
 - ["VSC6CGRect", "minXmidY"]
 - ["VSC6CGRect", "minXminY"]
 - !private ["VSC6CGRect", "minY"]
+- ["VSC6CGSize", "CGFloat"]
+- ["VSC6CGSize", "greaterDimetion"]
 - !private ["VSC6CGSize", "height"]
 - !private ["VSC6CGSize", "init"]
+- ["VSC6CGSize", "lesserDimetion"]
 - !private ["VSC6CGSize", "width"]
 - ["VSC8CGVector", "CGFloat"]
 - ["VSC8CGVector", "CGPoint"]
@@ -97,6 +108,7 @@ depends-member:
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Sd", "IntegerLiteralType"]
 - !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
@@ -104,6 +116,7 @@ depends-member:
 - !private ["PSs9Equatable", "CGVector"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "Stride"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "dx"]
 - !private ["PSs9Equatable", "dy"]
 - !private ["PSs9Equatable", "height"]
@@ -127,6 +140,7 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "Stride"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
@@ -146,6 +160,7 @@ depends-member:
 - !private ["PSs16SignedNumberType", "Stride"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSs10Strideable", "Stride"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
@@ -162,11 +177,13 @@ depends-member:
 - !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs12_Reflectable", "CGPoint"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "Stride"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "length"]
@@ -188,10 +205,13 @@ depends-nominal:
 - !private "PSs16AbsoluteValuable"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - "VSC7CGPoint"
 - "VSC6CGRect"
-- !private "VSC6CGSize"
+- "VSC6CGSize"
 - "VSC8CGVector"
 - !private "PSs11CVarArgType"
 - !private "PSs10Comparable"
@@ -211,6 +231,7 @@ depends-nominal:
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "PSs10Strideable"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs31_BuiltinFloatLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs19_CVarArgAlignedType"
@@ -235,4 +256,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "a71969076fdb3f23ba97e32e139f6ada"
+interface-hash: "53eb69f11822e977ac2d4d18716efb62"

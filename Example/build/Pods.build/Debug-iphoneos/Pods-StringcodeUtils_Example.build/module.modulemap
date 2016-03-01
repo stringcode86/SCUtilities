@@ -1,0 +1,6 @@
+framework module Pods_StringcodeUtils_Example {
+  umbrella header "Pods-StringcodeUtils_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,22 +5,22 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
-- "CGImageRef"
-- !private "StringLiteralType"
-- "CGColorRef"
-- !private "AnyObject"
-- !private "*"
-- !private "CIFilter"
-- !private "CIColor"
-- !private "CGRect"
-- "CIContext"
-- !private "String"
-- !private "CIVector"
 - !private "context"
+- "CGFloat"
+- !private "CGRect"
+- "CGColorRef"
+- !private "StringLiteralType"
+- !private "CIVector"
+- !private "*"
+- "CGImageRef"
+- "CIContext"
+- !private "CIColor"
 - "CGPoint"
-- "CGImageCreateLinerGranient"
+- !private "CIFilter"
+- !private "String"
+- !private "AnyObject"
 - "CGSize"
+- "CGImageCreateLinerGranient"
 depends-member:
 - !private ["PSs9AnyObject", "createCGImage"]
 - ["PSs9AnyObject", "init"]

@@ -81,7 +81,7 @@ public extension CGVector {
     }
 }
 
-//MARK: CGSize
+//MARK: CGRect
 
 public extension CGRect {
     public var minXminY: CGPoint { get { return CGPoint(x: self.minX, y: self.minY) } }
@@ -95,7 +95,14 @@ public extension CGRect {
     public var maxXmaxY: CGPoint { get { return CGPoint(x: self.maxX, y: self.maxY) } }
 }
 
+
+
 //MARK: CGSize
+
+public extension CGSize {
+    public var greaterDimetion: CGFloat { get { return width > height ? width : height } }
+    public var lesserDimetion: CGFloat { get { return width < height ? width : height } }
+}
 
 public func + (left: CGSize, right: CGSize) -> CGSize {
     return CGSize(width: left.width + right.width, height: left.height + right.height)
@@ -111,4 +118,5 @@ public func * (size: CGSize, scalar: CGFloat) -> CGSize {
 
 public func / (size: CGSize, scalar: CGFloat) -> CGSize {
     return CGSize(width: size.width / scalar, height: size.height / scalar)
+    
 }

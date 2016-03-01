@@ -1,0 +1,13 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "fa9d318ff14b29034d533016bdb7e5a6"
+build_time: [510175988, 212577000]
+inputs:
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/NSDicitionary+Extensions.swift": [505955471, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesUI/UIColor+Extentions.swift": [505330902, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesUI/CGImageRef+Extension.swift": [507739658, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesUI/CGTypes+Extensions.swift": [508356156, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/Numebers.swift": [505612194, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/Utils.swift": [506206135, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/PathsURLs.swift": [505846155, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/SCCacheManager.swift": [503336993, 0]
+  "/Users/stringCode/Development/Apps/SCUtilities/SCUtilitiesCore/NSDate+Extensions.swift": [508586784, 0]

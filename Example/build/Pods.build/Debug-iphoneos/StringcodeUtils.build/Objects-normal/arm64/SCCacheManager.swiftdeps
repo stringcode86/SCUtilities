@@ -10,12 +10,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "IntegerLiteralType"
-- !private ">="
-- "Any"
 - !private "NSDate"
-- "FloatLiteralType"
 - "SCCacheManager"
 - "String"
+- "Any"
+- !private ">="
+- "FloatLiteralType"
 depends-member:
 - ["PSs9AnyObject", "CacheItem"]
 - !private ["PSs9AnyObject", "NSDate"]

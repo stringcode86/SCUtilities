@@ -6,9 +6,9 @@ provides-member:
 - ["CSo12NSDictionary", "swiftStringKeyedDictionary"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSDictionary"
-- "Any"
 - "String"
+- "Any"
+- "NSDictionary"
 depends-member:
 - !private ["PSs9AnyObject", "Any"]
 - !private ["PSs9AnyObject", "Element"]

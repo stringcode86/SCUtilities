@@ -9,13 +9,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "pow"
+- "Float"
+- !private "FloatLiteralType"
 - !private "*"
+- "Int"
+- !private "/"
 - "Double"
 - !private "round"
-- !private "/"
-- "Int"
-- !private "FloatLiteralType"
-- "Float"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "Double"]
 - !private ["PSs16AbsoluteValuable", "Float"]

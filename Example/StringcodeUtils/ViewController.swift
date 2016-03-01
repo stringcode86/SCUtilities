@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StringcodeUtils
 
 class ViewController: UIViewController {
 

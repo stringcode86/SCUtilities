@@ -8,20 +8,20 @@ provides-member:
 - ["CSo6NSDate", "currentYear"]
 - ["CSo6NSDate", "yearComponent"]
 provides-dynamic-lookup:
-- "isTimeDeltaBetween"
-- "secondsInDay"
 - "currentYear"
+- "secondsInDay"
 - "yearComponent"
+- "isTimeDeltaBetween"
 depends-top-level:
-- !private "<"
-- "NSDate"
 - "NSTimeInterval"
-- !private "BooleanLiteralType"
-- !private "-"
-- !private "NSCalendar"
 - "Int"
+- !private "NSCalendar"
 - !private "fabs"
+- !private "-"
 - "Bool"
+- !private "<"
+- !private "BooleanLiteralType"
+- "NSDate"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "Stride"]
 - !private ["PSs9AnyObject", "NSCalendar"]
