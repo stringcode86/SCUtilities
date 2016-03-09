@@ -19,4 +19,8 @@ public extension NSDictionary {
         }
         return dict
     }
+    
+    public func stringValue(forKey: String) -> String? {
+        return self[forKey] as? String
+    }
 }

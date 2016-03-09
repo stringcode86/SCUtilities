@@ -14,6 +14,12 @@ public func dispatch_after(delay:Double, _ closure:(()->())? = nil) {
     }
 }
 
+public func dispatch_async_on_main_queue(block: ()->()) {
+    dispatch_async(dispatch_get_main_queue()) {
+        block()
+    }
+}
+
 public func saveFileToDocumentsWithName(name: String, contents: NSData) {
     var path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).last as String!
     path = path + "/" + name

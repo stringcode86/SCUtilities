@@ -30,6 +30,9 @@ public extension NSDate {
     /// Time interval with number if seconds in a day. 24 * 60 * 60
     public class var secondsInDay: NSTimeInterval { get { return 86400 } }
     
+    /// Time interval with number if seconds in a month. 30 * 24 * 60 * 60
+    public class var secondsInMonth: NSTimeInterval { get { return NSDate.secondsInDay * 30 } }
+    
     /// Returns current year
     public class var currentYear: Int {
         get { return NSDate.yearComponentFromDate(NSDate()) }
