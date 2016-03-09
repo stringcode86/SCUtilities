@@ -45,7 +45,7 @@ public extension CGPoint {
     public func scaled(scale: CGFloat) -> CGPoint {
         return CGPoint(x: x * scale, y: y * scale)
     }
-    
+    #if os(iOS) || os(OSX) || os(tvOS)
     public init?(string: String?) {
         if let string = string {
             let point = CGPointFromString(string)
@@ -54,6 +54,7 @@ public extension CGPoint {
             return nil
         }
     }
+    #endif
 }
 
 //MARK: CGVector
