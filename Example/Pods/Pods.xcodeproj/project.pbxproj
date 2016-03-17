@@ -10,7 +10,6 @@
 		14D1F35B4E42947AF8BF8F5673FF1022 /* Pods-StringcodeUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC7CFA9974C4820D5C06A6A81346EE4 /* Pods-StringcodeUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		163C6E8E5E7CEE1E0BEEB9CA0939DA3A /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */; };
 		1F118728B3D74089480152A6B660EA9A /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FAA72A31698ABE175298BF9227CD103 /* Numebers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079AED7974C258C51F004B55FFBCCF6C /* Numebers.swift */; };
 		28B9FF7ECA2700C7FC1BF35EEA8CE4AB /* StringcodeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32237FF7D9A4ACCF3FE526ACFE5B76 /* StringcodeUtils-dummy.m */; };
 		28F2071FFF5C5B0E9DEB6C3FE43A30CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393D1A899C707F79A64672C46ED238F /* UIKit.framework */; };
 		31027A684279183E61D4ADD09E4B89AC /* StringcodeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AC5D58DEA2DEB266E0647829405332 /* StringcodeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +32,7 @@
 		86C236093503855C86BC92EF4A28C14A /* Pods-StringcodeUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E6EB8FA0C7532FDD6F81F1DBC4EB7 /* Pods-StringcodeUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D549E01DA1D5104335CCEABFF870005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		9B066124CCC643B2C9170EF3C0814F4D /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819DD0E7CB4F2CAE8BC66F3D3A334B6D /* NSDicitionary+Extensions.swift */; };
+		9F15504F1C9AB12D00D8EAE2 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15504E1C9AB12D00D8EAE2 /* Math.swift */; };
 		9F45D4901C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */; };
 		9F47D7AC1C8626020043D99C /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47D7AB1C8626020043D99C /* Set+Extensions.swift */; };
 		A77EF226C517BDA086E8B04557E6C0D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
@@ -74,7 +74,6 @@
 /* Begin PBXFileReference section */
 		0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		0528444EFC68619AD1FEB8A7CD4A01BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		079AED7974C258C51F004B55FFBCCF6C /* Numebers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Numebers.swift; sourceTree = "<group>"; };
 		080C853574D098AE0FEC6B34C26CBB2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CA079DE4134FD454B58CFB408E8540 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		99B38EFEB56D5837EA3037144F561C7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A32237FF7D9A4ACCF3FE526ACFE5B76 /* StringcodeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StringcodeUtils-dummy.m"; sourceTree = "<group>"; };
 		9B509E92727E02EFD2BF9E423ABB495B /* Pods-StringcodeUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StringcodeUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F15504E1C9AB12D00D8EAE2 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutContriant+Extensions.swift"; sourceTree = "<group>"; };
 		9F47D7AB1C8626020043D99C /* Set+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+Extensions.swift"; sourceTree = "<group>"; };
 		A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
@@ -299,8 +299,8 @@
 			children = (
 				962DC21EFAA0A530F4F84FB264E525EA /* NSDate+Extensions.swift */,
 				819DD0E7CB4F2CAE8BC66F3D3A334B6D /* NSDicitionary+Extensions.swift */,
-				079AED7974C258C51F004B55FFBCCF6C /* Numebers.swift */,
 				2899061F4552EE2A3A945A34912577FE /* PathsURLs.swift */,
+				9F15504E1C9AB12D00D8EAE2 /* Math.swift */,
 				242A2F21856790EC7E05B38697928714 /* SCCacheManager.swift */,
 				9F47D7AB1C8626020043D99C /* Set+Extensions.swift */,
 				08CA079DE4134FD454B58CFB408E8540 /* Utils.swift */,
@@ -548,7 +548,6 @@
 				BA0C8E4D62C7E6E4D855AB1576EE78FC /* CGTypes+Extensions.swift in Sources */,
 				449F82A50F95EC4402276B84C0BA8D6F /* NSDate+Extensions.swift in Sources */,
 				9B066124CCC643B2C9170EF3C0814F4D /* NSDicitionary+Extensions.swift in Sources */,
-				1FAA72A31698ABE175298BF9227CD103 /* Numebers.swift in Sources */,
 				76BFC4EA064AE3C8C3A53EF50EEAB84C /* PathsURLs.swift in Sources */,
 				E658A8E77C3394B35D3890919D16CD89 /* SCCacheManager.swift in Sources */,
 				28B9FF7ECA2700C7FC1BF35EEA8CE4AB /* StringcodeUtils-dummy.m in Sources */,
@@ -563,6 +562,7 @@
 			files = (
 				CC2BD0A04199B280AD93F459968CAFC2 /* FBSnapshotTestCase-dummy.m in Sources */,
 				35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */,
+				9F15504F1C9AB12D00D8EAE2 /* Math.swift in Sources */,
 				5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */,
 				AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */,
 				52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */,

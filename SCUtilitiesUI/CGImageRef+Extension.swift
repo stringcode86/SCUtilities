@@ -29,6 +29,16 @@ public func CGImageCreateLinerGranient(size: CGSize, points: [CGPoint], colors: 
     return nil
 }
 
+public func CGImageCreateOverlayColor(image: CGImageRef, color: CGColorRef) -> CGImageRef {
+    let inputImage = CIImage(CGImage: image)
+    let overlayImage = CIImage(color: CIColor(CGColor: color)).imageByCroppingToRect(inputImage.extent)
+    let filter = CIFilter(name: "CIMultiplyCompositing", withInputParameters: ["inputImage": inputImage, "inputBackgroundImage": overlayImage])
+    if let outputImage = filter?.outputImage {
+        return context.createCGImage(outputImage, fromRect: inputImage.extent)
+    }
+    return image
+}
+
 private var context = CIContext()
 
 #endif

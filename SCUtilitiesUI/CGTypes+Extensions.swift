@@ -111,6 +111,18 @@ public extension CGRect {
 public extension CGSize {
     public var greaterDimetion: CGFloat { get { return width > height ? width : height } }
     public var lesserDimetion: CGFloat { get { return width < height ? width : height } }
+    public var midPoint: CGPoint { get { return CGPoint(x: width / 2, y: height / 2) } }
+    
+    #if os(iOS) || os(tvOS)
+    public init?(string: String?) {
+        if let string = string {
+            let size = CGSizeFromString(string)
+            self.init(width:size.width, height: size.height)
+        } else {
+            return nil
+        }
+    }
+    #endif
 }
 
 public func + (left: CGSize, right: CGSize) -> CGSize {
