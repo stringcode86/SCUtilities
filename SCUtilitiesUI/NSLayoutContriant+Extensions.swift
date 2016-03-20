@@ -22,7 +22,6 @@
 
 /// Counvenience met
 public extension NSLayoutConstraint {
-    
     /// Generates layout constraits that will cause `view` to have eqaul size as it's `superview`
     public class func constraintsToCoverSuperviewForView(view: SCView) -> [NSLayoutConstraint] {
         let bindings =  ["view": view]
@@ -33,6 +32,22 @@ public extension NSLayoutConstraint {
         constaints.appendContentsOf(hConsts)
         constaints.appendContentsOf(vConsts)
         return constaints
+    }
+    /// Generates equal width NSLayoutConstraint for items
+    public func equalWidthConstriantForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: item, attribute: .Width, relatedBy: .Equal, toItem: toItem, attribute: .Width, multiplier: 1, constant: 0)
+    }
+    
+    public func heightEqualTo(height: CGFloat, forItem: AnyObject) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: height, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 0, constant: height)
+    }
+    
+    public func centerEqualForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: item, attribute: .CenterX, relatedBy: .Equal, toItem: toItem, attribute: .CenterX, multiplier: 1, constant: 0)
+    }
+    
+    public func verticalSpacingForItem(item: AnyObject, toItem: AnyObject, offset: CGFloat) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: item, attribute: .Bottom, relatedBy: .Equal, toItem: toItem, attribute: .Top, multiplier: 1, constant: offset)
     }
     
 }
