@@ -34,19 +34,19 @@ public extension NSLayoutConstraint {
         return constaints
     }
     /// Generates equal width NSLayoutConstraint for items
-    public func equalWidthConstriantForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
+    public class func equalWidthConstriantForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: item, attribute: .Width, relatedBy: .Equal, toItem: toItem, attribute: .Width, multiplier: 1, constant: 0)
     }
     
-    public func heightEqualTo(height: CGFloat, forItem: AnyObject) -> NSLayoutConstraint {
+    public class func heightEqualTo(height: CGFloat, forItem: AnyObject) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: height, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 0, constant: height)
     }
     
-    public func centerEqualForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
+    public class func centerEqualForItem(item: AnyObject, toItem: AnyObject) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: item, attribute: .CenterX, relatedBy: .Equal, toItem: toItem, attribute: .CenterX, multiplier: 1, constant: 0)
     }
     
-    public func verticalSpacingForItem(item: AnyObject, toItem: AnyObject, offset: CGFloat) -> NSLayoutConstraint {
+    public class func verticalSpacingForItem(item: AnyObject, toItem: AnyObject, offset: CGFloat) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: item, attribute: .Bottom, relatedBy: .Equal, toItem: toItem, attribute: .Top, multiplier: 1, constant: offset)
     }
     
