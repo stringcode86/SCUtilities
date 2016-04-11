@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "StringcodeUtils"
-  s.version          = "0.1.16"
+  s.version          = "0.1.17"
   s.summary          = "Convenience, utility framework for iOS, watchOS, tvOS, OSX written in Swift."
   s.description      = <<-DESC
                         Convenience, utility framework for iOS, watchOS, tvOS, OSX written in Swift. Right now in very rought state. I supose of very little value to anyone apart from me for now
