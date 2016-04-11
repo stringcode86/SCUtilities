@@ -32,9 +32,10 @@
 		86C236093503855C86BC92EF4A28C14A /* Pods-StringcodeUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E6EB8FA0C7532FDD6F81F1DBC4EB7 /* Pods-StringcodeUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D549E01DA1D5104335CCEABFF870005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		9B066124CCC643B2C9170EF3C0814F4D /* NSDicitionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819DD0E7CB4F2CAE8BC66F3D3A334B6D /* NSDicitionary+Extensions.swift */; };
-		9F15504F1C9AB12D00D8EAE2 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15504E1C9AB12D00D8EAE2 /* Math.swift */; };
-		9F45D4901C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */; };
-		9F47D7AC1C8626020043D99C /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47D7AB1C8626020043D99C /* Set+Extensions.swift */; };
+		9FBE18A31CA1D05000A3E780 /* NSLayoutContriant+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */; };
+		9FBE18A41CA1D05700A3E780 /* TouchForwardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE18A11CA1D03C00A3E780 /* TouchForwardingView.swift */; };
+		9FBE18A51CA1D06500A3E780 /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47D7AB1C8626020043D99C /* Set+Extensions.swift */; };
+		9FBE18A61CA1D06E00A3E780 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15504E1C9AB12D00D8EAE2 /* Math.swift */; };
 		A77EF226C517BDA086E8B04557E6C0D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */; };
 		AD4D905241DED4AEAD67447088ACB23D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C84AC883B6FC690E82525E7ECB377 /* XCTest.framework */; };
@@ -114,6 +115,7 @@
 		9F15504E1C9AB12D00D8EAE2 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutContriant+Extensions.swift"; sourceTree = "<group>"; };
 		9F47D7AB1C8626020043D99C /* Set+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+Extensions.swift"; sourceTree = "<group>"; };
+		9FBE18A11CA1D03C00A3E780 /* TouchForwardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchForwardingView.swift; sourceTree = "<group>"; };
 		A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		AADAF1CFE2C942F48BB6502EE9944287 /* StringcodeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StringcodeUtils-prefix.pch"; sourceTree = "<group>"; };
 		B3D08C65AB18ACF0D05C7C79DB5737E4 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				5C1BC0AF01302B8B227FBE1DC8F6AD4B /* CGTypes+Extensions.swift */,
 				D62FC1014C84F0F5D71ABB0D121D1073 /* UIColor+Extentions.swift */,
 				9F45D48F1C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift */,
+				9FBE18A11CA1D03C00A3E780 /* TouchForwardingView.swift */,
 			);
 			path = SCUtilitiesUI;
 			sourceTree = "<group>";
@@ -545,10 +548,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA78982E5E8FB2DC203F6B5FF143BABF /* CGImageRef+Extension.swift in Sources */,
+				9FBE18A61CA1D06E00A3E780 /* Math.swift in Sources */,
 				BA0C8E4D62C7E6E4D855AB1576EE78FC /* CGTypes+Extensions.swift in Sources */,
+				9FBE18A41CA1D05700A3E780 /* TouchForwardingView.swift in Sources */,
 				449F82A50F95EC4402276B84C0BA8D6F /* NSDate+Extensions.swift in Sources */,
 				9B066124CCC643B2C9170EF3C0814F4D /* NSDicitionary+Extensions.swift in Sources */,
 				76BFC4EA064AE3C8C3A53EF50EEAB84C /* PathsURLs.swift in Sources */,
+				9FBE18A51CA1D06500A3E780 /* Set+Extensions.swift in Sources */,
+				9FBE18A31CA1D05000A3E780 /* NSLayoutContriant+Extensions.swift in Sources */,
 				E658A8E77C3394B35D3890919D16CD89 /* SCCacheManager.swift in Sources */,
 				28B9FF7ECA2700C7FC1BF35EEA8CE4AB /* StringcodeUtils-dummy.m in Sources */,
 				35E9373564D9131A3D9D881FC8AAE21E /* UIColor+Extentions.swift in Sources */,
@@ -562,14 +569,11 @@
 			files = (
 				CC2BD0A04199B280AD93F459968CAFC2 /* FBSnapshotTestCase-dummy.m in Sources */,
 				35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */,
-				9F15504F1C9AB12D00D8EAE2 /* Math.swift in Sources */,
 				5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */,
 				AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */,
 				52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */,
 				788E3D9458FE9540469981BE9A0B227C /* UIImage+Compare.m in Sources */,
 				163C6E8E5E7CEE1E0BEEB9CA0939DA3A /* UIImage+Diff.m in Sources */,
-				9F45D4901C6A70B000F2A599 /* NSLayoutContriant+Extensions.swift in Sources */,
-				9F47D7AC1C8626020043D99C /* Set+Extensions.swift in Sources */,
 				EDD91D0CC316AC322E1607D3749F1C0A /* UIImage+Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

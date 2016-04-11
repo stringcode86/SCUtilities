@@ -93,6 +93,9 @@ public extension CGVector {
 //MARK: CGRect
 
 public extension CGRect {
+    init(center: CGPoint, size: CGSize) {
+        self.init(origin: CGPoint(x: center.x - size.width * 0.5, y: center.y - size.height * 0.5), size: size)
+    }
     public var minXminY: CGPoint { get { return CGPoint(x: self.minX, y: self.minY) } }
     public var minXmidY: CGPoint { get { return CGPoint(x: self.minX, y: self.midY) } }
     public var minXmaxY: CGPoint { get { return CGPoint(x: self.minX, y: self.maxY) } }
@@ -102,6 +105,9 @@ public extension CGRect {
     public var maxXminY: CGPoint { get { return CGPoint(x: self.maxX, y: self.minY) } }
     public var maxXmidY: CGPoint { get { return CGPoint(x: self.maxX, y: self.midY) } }
     public var maxXmaxY: CGPoint { get { return CGPoint(x: self.maxX, y: self.maxY) } }
+    public func sizeFlipedCenterPreservedRect() -> CGRect {
+        return CGRect(x: origin.x + (width - height) * 0.5, y: origin.y + (height - width) * 0.5, width: size.height, height: size.width)
+    }
 }
 
 
@@ -140,4 +146,15 @@ public func * (size: CGSize, scalar: CGFloat) -> CGSize {
 public func / (size: CGSize, scalar: CGFloat) -> CGSize {
     return CGSize(width: size.width / scalar, height: size.height / scalar)
     
+}
+
+// MARK: UIEdgeInsets
+
+public extension UIEdgeInsets {
+    /// Cretes inset values from top * heigth , left * width etc of `rect`
+    /// Uses those values to inset `rect`
+    public func relativeInsetRect(rect:CGRect) -> CGRect {
+        let insets = UIEdgeInsets(top: rect.height * top, left: rect.width * left, bottom: rect.height * bottom, right: rect.width * right)
+        return UIEdgeInsetsInsetRect(rect, insets)
+    }
 }
