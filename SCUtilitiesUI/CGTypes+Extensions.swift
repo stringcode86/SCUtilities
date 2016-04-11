@@ -148,7 +148,10 @@ public func / (size: CGSize, scalar: CGFloat) -> CGSize {
     
 }
 
+
 // MARK: UIEdgeInsets
+
+#if os(iOS) || os(tvOS)
 
 public extension UIEdgeInsets {
     /// Cretes inset values from top * heigth , left * width etc of `rect`
@@ -158,3 +161,5 @@ public extension UIEdgeInsets {
         return UIEdgeInsetsInsetRect(rect, insets)
     }
 }
+
+#endif
