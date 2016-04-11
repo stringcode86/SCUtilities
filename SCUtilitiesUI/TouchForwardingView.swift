@@ -6,6 +6,8 @@
 //  Copyright © 2016 stringCode ltd. All rights reserved.
 //
 
+#if os(iOS) || os(tvOS)
+
 import UIKit
 
 public class TouchForwardingView: UIView {
@@ -30,3 +32,5 @@ public class TouchForwardingView: UIView {
     /// Views that you would like to get hitTest(_, withEvent:_)
     public var passThroughViews:[UIView]?
 }
+
+#endif
