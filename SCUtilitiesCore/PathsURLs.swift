@@ -12,3 +12,8 @@ public func documentsPath(expandTilde: Bool = true) -> String {
     let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, expandTilde).first
     return path!
 }
+
+public func libraryPath(expandTilde: Bool = true) -> String {
+    let path = NSSearchPathForDirectoriesInDomains(.LibraryDirectory, .UserDomainMask, true).first
+    return path!
+}
