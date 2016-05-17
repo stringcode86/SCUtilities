@@ -27,6 +27,14 @@ public extension NSDate {
         return fabs(timeIntervalSince1970 - date.timeIntervalSince1970) < timeInteval
     }
     
+    public convenience init?(timeIntervalSince1970 timeInterval: NSTimeInterval?) {
+        if let timeInterval = timeInterval {
+            self.init(timeIntervalSince1970: timeInterval)
+        } else {
+            return nil
+        }
+    }
+    
     /// Time interval with number if seconds in a day. 24 * 60 * 60
     public class var secondsInDay: NSTimeInterval { get { return 86400 } }
     
