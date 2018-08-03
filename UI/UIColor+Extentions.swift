@@ -21,7 +21,7 @@
     
     public extension UIColor {
         
-        public class func randomColor(randomizeAlpha: Bool = false) -> UIColor {
+        public class func randomColor(_ randomizeAlpha: Bool = false) -> UIColor {
             return SCColor._randomColor(randomizeAlpha) as UIColor
         }
     }
@@ -29,7 +29,7 @@
     public extension UIColor {
         
         public convenience init(hexString:String) {
-            let rgbVals = SCColor.colorsValuesFromHex(hexString)
+            let rgbVals = SCColor.colorsValuesFromHex(hexString: hexString)
             self.init(red:rgbVals.r, green:rgbVals.g, blue:rgbVals.b, alpha:1)
         }
         
@@ -65,7 +65,7 @@
 
 private extension SCColor {
     
-    private class func _randomColor(randomizeAlpha: Bool = false) -> SCColor {
+    private class func _randomColor(_ randomizeAlpha: Bool = false) -> SCColor {
         let red = randomCGFloatForColor()
         let green = randomCGFloatForColor()
         let blue = randomCGFloatForColor()
@@ -81,15 +81,15 @@ private extension SCColor {
 
 private extension SCColor {
         private class func colorsValuesFromHex(hexString: String) -> (r:CGFloat, g:CGFloat, b:CGFloat) {
-        let hexString:String = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let scanner            = NSScanner(string: hexString)
+        let hexString:String = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+            let scanner            = Scanner(string: hexString)
         
         if (hexString.hasPrefix("#")) {
             scanner.scanLocation = 1
         }
         
         var color:UInt32 = 0
-        scanner.scanHexInt(&color)
+            scanner.scanHexInt32(&color)
         
         let mask = 0x000000FF
         let r = Int(color >> 16) & mask
